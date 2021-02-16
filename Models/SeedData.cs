@@ -29,7 +29,7 @@ namespace Assignment5_Database.Models
                             Publisher="Signet",
                             ISBN = "978-0451419439",
                             Classification_Category = "Fiction, Classic",
-                            Price = 9.96
+                            Price = 9.97
                         }
 
                     );
