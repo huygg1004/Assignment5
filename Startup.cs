@@ -26,7 +26,7 @@ namespace Assignment5_Database
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //establishing connection with database using connection string and calling necessary services
+            //establishing connection with database using connection string and calling necessary services to querry the database
             services.AddDbContext<BookstoreDbContext>(options =>
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:BookstoreConnection"]);
