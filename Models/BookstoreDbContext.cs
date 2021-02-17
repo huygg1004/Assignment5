@@ -8,6 +8,7 @@ namespace Assignment5_Database.Models
 {
     public class BookstoreDbContext : DbContext
     {
+        //this class helps us set up services necessary
         public BookstoreDbContext (DbContextOptions<BookstoreDbContext> options) : base(options)
         {
                 

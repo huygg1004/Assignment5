@@ -26,7 +26,7 @@ namespace Assignment5_Database
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
+            //establishing connection with database using connection string and calling necessary services
             services.AddDbContext<BookstoreDbContext>(options =>
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:BookstoreConnection"]);
@@ -61,6 +61,7 @@ namespace Assignment5_Database
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
+            //grabbing data from seeddata class
             SeedData.EnsurePopulated(app);
         }
     }

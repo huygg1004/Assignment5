@@ -7,6 +7,7 @@ namespace Assignment5_Database.Models
 {
     public class EFBookRepository : BookRepository
     {
+        //this class helps us create services for the startup
         private BookstoreDbContext _context;
         //Constructor
         public EFBookRepository (BookstoreDbContext context)

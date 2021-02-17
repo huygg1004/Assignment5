@@ -14,12 +14,14 @@ namespace Assignment5_Database.Controllers
         private readonly ILogger<HomeController> _logger;
         private BookRepository _repository;
 
+        //Making sure to grab the repository class
         public HomeController(ILogger<HomeController> logger, BookRepository repository)
         {
             _logger = logger;
             _repository = repository;
         }
 
+        //return the data from repository class
         public IActionResult Index()
         {
             return View(_repository.Books);
