@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Assignment5_Database.Migrations
 {
     [DbContext(typeof(BookstoreDbContext))]
-    [Migration("20210217222810_Initial")]
+    [Migration("20210218162528_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,7 +27,11 @@ namespace Assignment5_Database.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("Author")
+                    b.Property<string>("Author_First")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Author_Last")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

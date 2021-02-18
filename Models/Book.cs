@@ -15,8 +15,11 @@ namespace Assignment5_Database.Models
         [Required(ErrorMessage = "Please enter Title field")]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Please enter Author field")]
-        public string Author { get; set; }
+        [Required(ErrorMessage = "Please enter Author First field")]
+        public string Author_First { get; set; }
+
+        [Required(ErrorMessage = "Please enter Author Last field")]
+        public string Author_Last { get; set; }
 
         [Required(ErrorMessage = "Please enter Publisher field")]
         public string Publisher { get; set; }
@@ -33,7 +36,7 @@ namespace Assignment5_Database.Models
 
         [Required(ErrorMessage = "Please enter Price field")]
         public double Price { get; set; }
-      
+
 
     }
 }

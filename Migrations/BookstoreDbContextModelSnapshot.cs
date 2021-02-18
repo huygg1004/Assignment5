@@ -25,7 +25,11 @@ namespace Assignment5_Database.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("Author")
+                    b.Property<string>("Author_First")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Author_Last")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

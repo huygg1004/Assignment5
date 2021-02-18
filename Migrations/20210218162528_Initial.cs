@@ -13,7 +13,8 @@ namespace Assignment5_Database.Migrations
                     BookId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Author = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Author_First = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Author_Last = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Publisher = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ISBN = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Classification = table.Column<string>(type: "nvarchar(max)", nullable: false),

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Assignment5_Database.Models
 {
-    //this class helps us querry the data in the database
+    //this class helps us querry the data in the database - middle man context file and database
     public interface BookRepository
     {
         IQueryable<Book> Books { get;  }

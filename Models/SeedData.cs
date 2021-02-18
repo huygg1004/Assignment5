@@ -24,20 +24,22 @@ namespace Assignment5_Database.Models
             if (!context.Books.Any())
             {
                 context.Books.AddRange(
-                        new Book
-                        {
-                            Title="Les Miserables",
-                            Author="Victor Hugo",
-                            Publisher="Signet",
-                            ISBN = "978-0451419439",
-                            Classification = "Fiction",
-                            Category = "Classic",
-                            Price = 9.95
-                        },
+                       new Book
+                       {
+                           Title = "Les Miserables",
+                           Author_First = "Victor",
+                           Author_Last = "Hugo",
+                           Publisher = "Signet",
+                           ISBN = "978-0451419439",
+                           Classification = "Fiction",
+                           Category = "Classic",
+                           Price = 9.95
+                       },
                         new Book
                         {
                             Title = "Team of Rivals",
-                            Author = "Doris Kearns Goodwin",
+                            Author_First = "Doris",
+                            Author_Last = "Kearns Goodwin",
                             Publisher = "Simon & Schuster",
                             ISBN = "978-0743270755",
                             Classification = "Non-Fiction",
@@ -47,7 +49,8 @@ namespace Assignment5_Database.Models
                         new Book
                         {
                             Title = "The Snowball",
-                            Author = "Alice Schroeder",
+                            Author_First = "Alice",
+                            Author_Last = "Schroeder",
                             Publisher = "Bantam",
                             ISBN = "978-0553384611",
                             Classification = "Non-Fiction",
@@ -57,7 +60,8 @@ namespace Assignment5_Database.Models
                         new Book
                         {
                             Title = "American Ulysses",
-                            Author = "Ronald C. White",
+                            Author_First = "Ronald",
+                            Author_Last = "C. White",
                             Publisher = "Random House",
                             ISBN = "978-0812981254",
                             Classification = "Non-Fiction",
@@ -67,7 +71,8 @@ namespace Assignment5_Database.Models
                         new Book
                         {
                             Title = "Unbroken",
-                            Author = "Laura Hillenbrand",
+                            Author_First = "Laura",
+                            Author_Last = "Hillenbrand",
                             Publisher = "Random House",
                             ISBN = "978-0812974492",
                             Classification = "Non-Fiction",
@@ -77,7 +82,8 @@ namespace Assignment5_Database.Models
                         new Book
                         {
                             Title = "The Great Train Robbery",
-                            Author = "Michael Crichton",
+                            Author_First = "Michael",
+                            Author_Last = "Crichton",
                             Publisher = "Vintage",
                             ISBN = "978-0804171281",
                             Classification = "Fiction",
@@ -87,7 +93,8 @@ namespace Assignment5_Database.Models
                         new Book
                         {
                             Title = "Deep Work",
-                            Author = "Cal Newport",
+                            Author_First = "Cal",
+                            Author_Last = "Newport",
                             Publisher = "Grand Central Publishing",
                             ISBN = "978-1455586691",
                             Classification = "Non-Fiction",
@@ -97,7 +104,8 @@ namespace Assignment5_Database.Models
                         new Book
                         {
                             Title = "It's Your Ship",
-                            Author = "Michael Abrashoff",
+                            Author_First = "Michael",
+                            Author_Last = "Abrashoff",
                             Publisher = "Grand Central Publishing",
                             ISBN = "978-1455523023",
                             Classification = "Non-Fiction",
@@ -107,7 +115,8 @@ namespace Assignment5_Database.Models
                          new Book
                          {
                              Title = "It's Your Ship",
-                             Author = "Michael Abrashoff",
+                             Author_First = "Michael",
+                             Author_Last = "Abrashoff",
                              Publisher = "Grand Central Publishing",
                              ISBN = "978-1455523023",
                              Classification = "Non-Fiction",
@@ -117,7 +126,8 @@ namespace Assignment5_Database.Models
                           new Book
                           {
                               Title = "The Virgin Way",
-                              Author = "Richard Branson",
+                              Author_First = "Richard",
+                              Author_Last = "Branson",
                               Publisher = "Portfolio",
                               ISBN = "978-1591847984",
                               Classification = "Non-Fiction",
@@ -127,7 +137,8 @@ namespace Assignment5_Database.Models
                            new Book
                            {
                                Title = "Sycamore Row",
-                               Author = "John Grisham",
+                               Author_First = "John",
+                               Author_Last = "Grisham",
                                Publisher = "Bantam",
                                ISBN = "978-0553393613",
                                Classification = "Fiction",
