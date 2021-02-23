@@ -45,6 +45,9 @@ namespace Assignment5_Database.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Page")
+                        .HasColumnType("int");
+
                     b.Property<double>("Price")
                         .HasColumnType("float");
 

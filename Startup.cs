@@ -57,8 +57,10 @@ namespace Assignment5_Database
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    "pagination",
+                    "P{page}",
+                    new { Controller = "Home", action = "Index" });
+                endpoints.MapDefaultControllerRoute();
             });
 
             //grabbing data from seeddata class

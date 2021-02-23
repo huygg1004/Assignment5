@@ -33,7 +33,8 @@ namespace Assignment5_Database.Models
                            ISBN = "978-0451419439",
                            Classification = "Fiction",
                            Category = "Classic",
-                           Price = 9.95
+                           Price = 9.95,
+                           Page = 1488
                        },
                         new Book
                         {
@@ -44,7 +45,8 @@ namespace Assignment5_Database.Models
                             ISBN = "978-0743270755",
                             Classification = "Non-Fiction",
                             Category = "Biography",
-                            Price = 14.58
+                            Price = 14.58,
+                            Page = 944
                         },
                         new Book
                         {
@@ -55,7 +57,8 @@ namespace Assignment5_Database.Models
                             ISBN = "978-0553384611",
                             Classification = "Non-Fiction",
                             Category = "Biography",
-                            Price = 21.54
+                            Price = 21.54,
+                            Page = 832
                         },
                         new Book
                         {
@@ -66,7 +69,8 @@ namespace Assignment5_Database.Models
                             ISBN = "978-0812981254",
                             Classification = "Non-Fiction",
                             Category = "Biography",
-                            Price = 11.61
+                            Price = 11.61,
+                            Page = 864
                         },
                         new Book
                         {
@@ -77,7 +81,8 @@ namespace Assignment5_Database.Models
                             ISBN = "978-0812974492",
                             Classification = "Non-Fiction",
                             Category = "Historical",
-                            Price = 13.33
+                            Price = 13.33,
+                            Page = 528
                         },
                         new Book
                         {
@@ -88,7 +93,8 @@ namespace Assignment5_Database.Models
                             ISBN = "978-0804171281",
                             Classification = "Fiction",
                             Category = " Historical Fiction",
-                            Price = 15.95
+                            Price = 15.95,
+                            Page = 288
                         },
                         new Book
                         {
@@ -99,7 +105,8 @@ namespace Assignment5_Database.Models
                             ISBN = "978-1455586691",
                             Classification = "Non-Fiction",
                             Category = "Self-Help",
-                            Price = 14.99
+                            Price = 14.99,
+                            Page = 304
                         },
                         new Book
                         {
@@ -110,19 +117,11 @@ namespace Assignment5_Database.Models
                             ISBN = "978-1455523023",
                             Classification = "Non-Fiction",
                             Category = "Self-Help",
-                            Price = 21.66
+                            Price = 21.66,
+                            Page = 240
                         },
-                         new Book
-                         {
-                             Title = "It's Your Ship",
-                             Author_First = "Michael",
-                             Author_Last = "Abrashoff",
-                             Publisher = "Grand Central Publishing",
-                             ISBN = "978-1455523023",
-                             Classification = "Non-Fiction",
-                             Category = "Self-Help",
-                             Price = 21.66
-                         },
+                         
+                          
                           new Book
                           {
                               Title = "The Virgin Way",
@@ -132,7 +131,8 @@ namespace Assignment5_Database.Models
                               ISBN = "978-1591847984",
                               Classification = "Non-Fiction",
                               Category = "Business",
-                              Price = 29.16
+                              Price = 29.16,
+                              Page = 400
                           },
                            new Book
                            {
@@ -143,7 +143,44 @@ namespace Assignment5_Database.Models
                                ISBN = "978-0553393613",
                                Classification = "Fiction",
                                Category = "Thrillers",
-                               Price = 15.03
+                               Price = 15.03,
+                               Page = 642
+                           },
+                           new Book
+                           {
+                               Title = "The Book of Mormon",
+                               Author_First = "Jesus",
+                               Author_Last = "Christ",
+                               Publisher = "God",
+                               ISBN = "000-0000000000",
+                               Classification = "Non-Fiction",
+                               Category = "Holy Scripture",
+                               Price = 5.10,
+                               Page = 535
+                           },
+                           new Book
+                           {
+                               Title = "The Moment of Lift: How Empowering Women Changes the World",
+                               Author_First = "Melinda",
+                               Author_Last = "Gates",
+                               Publisher = "Flatiron",
+                               ISBN = "152-9005507",
+                               Classification = "Non-Fiction",
+                               Category = "Biography",
+                               Price = 11.99,
+                               Page = 293
+                           },
+                           new Book
+                           {
+                               Title = "How To Win Friends and Influence People",
+                               Author_First = "Dale",
+                               Author_Last = "Carnegie",
+                               Publisher = "Bacqpage",
+                               ISBN = "9781442344815",
+                               Classification = "Non-Fiction",
+                               Category = "Self-help",
+                               Price = 10.95,
+                               Page = 236
                            }
 
                     );

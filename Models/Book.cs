@@ -37,6 +37,9 @@ namespace Assignment5_Database.Models
         [Required(ErrorMessage = "Please enter Price field")]
         public double Price { get; set; }
 
+        [Required(ErrorMessage = "Please enter Page field")]
+        public int Page { get; set; }
+
 
     }
 }

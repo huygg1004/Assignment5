@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Assignment5_Database.Models;
+using Assignment5_Database.Models.ViewModels;
 
 namespace Assignment5_Database.Controllers
 {
@@ -13,6 +14,8 @@ namespace Assignment5_Database.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private BookRepository _repository;
+
+        public int PageSize = 5;
 
         //Making sure to grab the repository class
         public HomeController(ILogger<HomeController> logger, BookRepository repository)
@@ -22,10 +25,24 @@ namespace Assignment5_Database.Controllers
         }
 
         //return the data from repository class
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            return View(_repository.Books);
-        }
+            return View(new BookListViewModel
+            {
+                Books = _repository.Books
+                         .OrderBy(p => p.BookId)
+                        .Skip((page - 1) * PageSize)
+                        .Take(PageSize)
+                        ,
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = page,
+                    ItemsPerPage = PageSize,
+                    TotalNumItems = _repository.Books.Count()
+                }
+            });
+        }  
+             
 
         public IActionResult Privacy()
         {
