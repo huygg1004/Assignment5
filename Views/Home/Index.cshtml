@@ -17,7 +17,8 @@
     <div class="bg-faded p-1">
         <h4>
             @x.Title
-            <span class="badge badge-pill badge-primary" style="float:right">
+            @*I change the badge color to green as another extra bootstrap element for this assignment*@
+            <span class="badge badge-pill badge-success" style="float:right">
                 <small>@x.Price.ToString("c")</small>
             </span>
         </h4>
@@ -32,7 +33,10 @@
 </div>
 }
 
+@*this is to build the pagination at the bottom of the page*@
+
 <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
      page-class-normal="btn-outline-dark"
-     page-class-selected="btn-primary"
+     page-class-selected="btn-danger" 
      class="btn-group pull-right m-1"></div>
+@*i change the color of button to red with btn danger*@ 

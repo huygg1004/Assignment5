@@ -54,6 +54,8 @@ namespace Assignment5_Database
 
             app.UseAuthorization();
 
+            //configuring endpoint with P1 or P2 or P3
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

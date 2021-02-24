@@ -17,6 +17,7 @@ namespace Assignment5_Database.Models
                 .ServiceProvider.GetRequiredService<BookstoreDbContext>();
 
             //create migration
+            // the database has pages properties
             if (context.Database.GetPendingMigrations().Any())
             {
                 context.Database.Migrate();
