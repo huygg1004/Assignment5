@@ -54,8 +54,6 @@ namespace Assignment5_Database
 
             app.UseAuthorization();
 
-            //configuring endpoint with P1 or P2 or P3
-
             app.UseEndpoints(endpoints =>
             {
                 //mapping different url such as catpage, page or category endpoint

@@ -42,8 +42,6 @@ namespace Assignment5_Database.Infrastructure
 
             TagBuilder result = new TagBuilder("div");
 
-            //dynamically building the href tag for pagination
-
             for (int i = 1; i <= PageModel.TotalPages; i++)
             {
                 TagBuilder tag = new TagBuilder("a");
