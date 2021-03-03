@@ -50,7 +50,7 @@ namespace Assignment5_Database.Infrastructure
 
                 PageUrlValues["page"] = i;
 
-                tag.Attributes["href"] = urlHelper.Action(PageAction, new { page = i });
+                tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
 
                 if (PageClassesEnabled)
                 {
