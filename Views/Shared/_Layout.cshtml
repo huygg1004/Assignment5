@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
 </head>
 
 
@@ -18,11 +19,24 @@
 
         <span class="navbar-brand ml-2">BOOK STORE</span>
     </div>
+
+    @* Displaying the cart summary throughout our program *@
+    <div class="bg-dark text-white p-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col navbar-brand">HUY BOOK STORE</div>
+                <div class="col-6 text-right">
+                    <vc:cart-summary />
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row m-1 p-1">
         @*implementing some bootstrap through calling class*@
         <div id="blah" class="col-3">
             <h1>This is an Awesome Bookstore</h1>
-            <vc:navigation-menu/>
+            <vc:navigation-menu />
         </div>
         <div class="col-8">
             @RenderBody()
